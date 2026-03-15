@@ -22,7 +22,10 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build
-      run: ./gradlew assembleDebug --no-daemon
+  run: |
+    chmod +x gradlew
+    ./gradlew assembleDebug --stacktrace --no-daemon
+  
 
     - name: Upload
       uses: actions/upload-artifact@v4
