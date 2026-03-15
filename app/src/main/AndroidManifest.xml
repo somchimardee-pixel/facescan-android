@@ -1,12 +1,9 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.facescan.app">
-
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+<manifest package="com.facescan.app"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="face scan"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:label="facescan"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
         <activity
             android:name=".MainActivity"
