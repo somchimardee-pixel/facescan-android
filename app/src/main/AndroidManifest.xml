@@ -1,9 +1,11 @@
+<uses-permission android:name="android.permission.CAMERA"/>
 <manifest package="com.facescan.app"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="facescan"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+    android:allowBackup="true"
+    android:label="facescan"
+    android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
         <activity
             android:name=".MainActivity"
