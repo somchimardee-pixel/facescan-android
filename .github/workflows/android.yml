@@ -18,8 +18,8 @@ jobs:
         distribution: temurin
         java-version: 17
 
-    - name: Install Gradle
-      run: sudo apt-get install gradle -y
+    - name: Give permission
+      run: chmod +x gradlew
 
     - name: Build
       run: ./gradlew assembleDebug
